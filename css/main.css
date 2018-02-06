@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+#sheet {
+    display: flex;
+    flex-direction: column;
+}
+
+#sheet-header {
+    display: flex;
+    flex-direction: row;
+}
+
+#sheet-header input, .body-cell-col-1 {
+    font-size: smaller;
+    color: darkgrey;
+    text-align: center;
+}
+
+.cell {
+    width: 8em;
+    /*box-sizing: border-box;*/
+}
+
+#sheet-header > input:first-child, .body-cell-col-1 {
+    width: 2em;
+}
+
+#sheet-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.sheet-body-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#row-context-menu {
+    position: absolute;
+    background: lightgrey;
+    border: darkgrey;
+    /*z-index: 20;*/
+}
+
+#row-context-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#row-context-menu li {
+    margin: 0.5em;
+    color: black;
+}
+
+#selected-row {
+    border: 0.1em solid darkgrey;
+}
